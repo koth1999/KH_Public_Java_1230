@@ -8,6 +8,9 @@ package 메소드기본;
 
 public class BasicMethod {
     public static void main(String[] args) {
-
+        SampleMethod sampleMethod = new SampleMethod();
+        System.out.println(sampleMethod.sum(100, 200));
+        int rst=sampleMethod.sum(100,200);
+        System.out.println(rst);
     }
 }
