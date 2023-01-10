@@ -12,5 +12,7 @@ public class BasicMethod {
         System.out.println(sampleMethod.sum(100, 200));
         int rst=sampleMethod.sum(100,200);
         System.out.println(rst);
+        sampleMethod.say();
+        System.out.println(sampleMethod.strSay());
     }
 }
