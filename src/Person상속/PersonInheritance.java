@@ -70,4 +70,5 @@ class Student extends Person{
         String[] studyStr= {"", "\"열심히\"", "\"적당히\"", "\"놀면서\""};
         return studyStr[study];
     }
+
 }
