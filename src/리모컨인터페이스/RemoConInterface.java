@@ -11,6 +11,8 @@ public class RemoConInterface {
             remoCon.turnOn();
             remoCon.setVolume(20);
             remoCon.getInfo();
+            remoCon.setMute(true);
+            RemoteControl.changeBattery();
         } else{
             remoCon = new Audio();
             remoCon.turnOn();

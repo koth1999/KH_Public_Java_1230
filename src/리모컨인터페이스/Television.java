@@ -28,4 +28,9 @@ public class Television implements RemoteControl{
         System.out.println("TV 입니다.");
         System.out.println("현재 볼륨은 "+volume+" 입니다.");
     }
+    @Override
+    public void setMute(boolean mute){
+        if(mute) System.out.println("TV를 무음 처리합니다.");
+        else System.out.println("TV의 무음처리를 해제합니다.");
+    }
 }
