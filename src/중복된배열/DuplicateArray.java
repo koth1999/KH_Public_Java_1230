@@ -12,14 +12,14 @@ import java.util.Scanner;
 public class DuplicateArray {
     public static void main(String[] args) {
         int[] arr= new int[10];
-        int cnt = 0;
+        int cnt = 0; // 두번째 숫자를 찾기 위한 변수
         Scanner sc = new Scanner(System.in);
-        System.out.print("임의의 수 입력 : ");
+        System.out.print("10개의 임의의 수 입력 : ");
 
         for(int i=0; i<arr.length; i++){
-            arr[i] = sc.nextInt();
+            arr[i] = sc.nextInt(); // 입력받은 수를 배열에 대입(0~9)
         }
-        System.out.print("두번째 찾을 숫자 : ");
+        System.out.print("두번째 찾을 수 입력 : ");
         int findNum = sc.nextInt();
         for(int i=0; i<arr.length; i++){
             if(arr[i]==findNum) {
