@@ -9,11 +9,36 @@ public class MathEx {
     public static void main(String[] args) {
         // random() : 0.0이상 1.0 미만의 범위에서 임의의 double형 값 중 하나의 임의의 값 생성
         // 예 : 1 ~ 99 사이의 임의의 수 생성
-       for(int i=0; i<100; i++){
-           System.out.println((int)(Math.random()*100)+1);
-       }
+      // for(int i=0; i<100; i++){
+      //     System.out.println((int)(Math.random()*100)+1);
+      // }
 
-       //Random ran = new Random();
-       //System.out.println(ran.nextInt(100)); // 0 ~ 99
+       // 3 ~ 8 임의의 수 구하기
+//       System.out.println((int)(Math.random()*6)+3);
+
+       // abs() : 절대값 구하는 메소드, 입력이 음수이면 양수, 양수이면 양수
+//       System.out.println(Math.abs(10));
+//       System.out.println(Math.abs(-10));
+//       System.out.println(Math.abs(-3.14));
+
+       // floor() : 소수점 이하를 날리고 가장 가까운 정수값 출력
+       // ceil() : 소수점이 있으면 무조건 올림
+       // round() : 반올림
+       System.out.println(Math.floor(10.9999));
+       System.out.println(Math.floor(10.0001));
+
+       System.out.println(Math.ceil(10.9999));
+       System.out.println(Math.ceil(10.0001));
+
+       System.out.println(Math.round(10.9999));
+       System.out.println(Math.round(10.0001));
+
+       // min() : 전달된 두 값 중 작은 값 출력
+       // max() : 전달된 두 값 중 큰 값 출력
+       System.out.println(Math.max(10,12));
+       System.out.println(Math.min(10,5));
+
+
+
     }
 }
