@@ -25,7 +25,6 @@ public class SumCycle {
             cnt++;
             if(newNum==input) break;
             num = newNum;
-
         }
         System.out.print(cnt);
     }
