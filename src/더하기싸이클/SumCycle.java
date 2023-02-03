@@ -18,13 +18,13 @@ public class SumCycle {
         int newNum = 0; // 새로 만들어진 수
         int cnt = 0;
         int input = sc.nextInt();
-        int num = input;
+        int num = input; // 입력값을 순회용 num값으로 대입
         while(true){
-            sumNum = (num/10)+(num%10);
-            newNum = ((num%10)*10)+(sumNum%10);
-            cnt++;
-            if(newNum==input) break;
-            num = newNum;
+            sumNum = (num/10)+(num%10); // 입력값을 10의 자리 + 1의 자리로 변환
+            newNum = ((num%10)*10)+(sumNum%10); // 입력값의 1의자리 + 계산된 값의 1의자리를 더함
+            cnt++; // cycle 횟수를 1 증가 시킴
+            if(newNum==input) break; // 입력값과 새로운 숫자가 동일한지 확인
+            num = newNum; // 새로운 숫자를 순회용 num에 대입
         }
         System.out.print(cnt);
     }
