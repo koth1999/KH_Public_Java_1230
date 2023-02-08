@@ -1,4 +1,4 @@
-package 입출력예제스트림2번;
+package 입출력스트림예제2번;
 
 import java.io.FileInputStream;
 import java.io.IOException;
