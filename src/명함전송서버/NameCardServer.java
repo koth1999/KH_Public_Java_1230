@@ -22,9 +22,9 @@ public class NameCardServer {
         ServerSocket serverSocket = new ServerSocket(port);
         Scanner sc = new Scanner(System.in);
         while(true){
-            Socket socket = serverSocket.accept();
-            System.out.println("[클라이언트 : "+socket.getRemoteSocketAddress()+"연결");
-            System.out.println("클라이언트로 명함을 전송 하시겠습니까?(yes/no) : ");
+            Socket socket = serverSocket.accept(); // 클라이언트 연결 요청에 대한 대기
+            System.out.println("[클라이언트 : "+socket.getRemoteSocketAddress()+"연결]");
+            System.out.print("클라이언트로 명함을 전송 하시겠습니까?(yes/no) : ");
             String confirm = sc.next();
             if(confirm.equalsIgnoreCase("yes")) {
                 OutputStream os = socket.getOutputStream();
